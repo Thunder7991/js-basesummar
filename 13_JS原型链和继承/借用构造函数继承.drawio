@@ -1,0 +1,79 @@
+<mxfile host="65bd71144e">
+    <diagram id="MXMeKBS9uXyc11PVvMzq" name="第 1 页">
+        <mxGraphModel dx="753" dy="431" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="Student函数" style="swimlane;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="450" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="&lt;u&gt;&lt;font color=&quot;#ff3333&quot;&gt;Person.call(this,name,age)&lt;/font&gt;&lt;br&gt;&lt;/u&gt;&lt;br&gt;&lt;font color=&quot;#3333ff&quot;&gt;&lt;u&gt;prototype&lt;/u&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="3">
+                    <mxGeometry x="10" y="40" width="180" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;fillColor=#e51400;strokeColor=#B20000;" edge="1" parent="3" target="9">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="100" y="80" as="sourcePoint"/>
+                        <mxPoint x="150" y="30" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="12" value="" style="endArrow=classic;html=1;fontColor=#3333FF;entryX=-0.024;entryY=0.615;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#6a00ff;strokeColor=#3700CC;" edge="1" parent="3" target="7">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="130" y="120" as="sourcePoint"/>
+                        <mxPoint x="180" y="70" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" value=" new Person()" style="swimlane;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="450" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="&lt;font color=&quot;#ffff00&quot;&gt;__proto__=Person.prototype&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#ffffff&quot;&gt;name:unefined&lt;br&gt;&lt;/font&gt;age:undefined&lt;br&gt;friends:undefined&lt;br&gt;studying:function" style="whiteSpace=wrap;html=1;" vertex="1" parent="6">
+                    <mxGeometry x="10" y="40" width="180" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="endArrow=classic;html=1;fontColor=#FFFF00;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="6" target="14">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="100" y="90" as="sourcePoint"/>
+                        <mxPoint x="150" y="40" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="8" value="Person函数" style="swimlane;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="210" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="&lt;font color=&quot;#ffffff&quot;&gt;this.name = name&lt;br&gt;this.age = age&lt;br&gt;&lt;/font&gt;&lt;u&gt;&lt;font color=&quot;#00ff00&quot;&gt;prototype&lt;/font&gt;&lt;/u&gt;&lt;font color=&quot;#ffffff&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="8">
+                    <mxGeometry x="10" y="40" width="180" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="" style="endArrow=classic;html=1;fontColor=#00FF00;entryX=-0.002;entryY=0.622;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#60a917;strokeColor=#2D7600;" edge="1" parent="8" target="14">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="130" y="120" as="sourcePoint"/>
+                        <mxPoint x="180" y="70" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="13" value="Person.prototype" style="swimlane;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="450" y="210" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="eating:function&lt;br&gt;running:function&lt;br&gt;" style="whiteSpace=wrap;html=1;" vertex="1" parent="13">
+                    <mxGeometry x="10" y="40" width="180" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value=" new Student()" style="swimlane;startSize=23;" vertex="1" parent="1">
+                    <mxGeometry x="250" y="720" width="200" height="200" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="&lt;font color=&quot;#ffff00&quot;&gt;__proto__=Student.prototype&lt;/font&gt;&lt;br&gt;&lt;font color=&quot;#ffffff&quot;&gt;name:unefined&lt;br&gt;&lt;/font&gt;age:undefined&lt;br&gt;friends:undefined" style="whiteSpace=wrap;html=1;" vertex="1" parent="19">
+                    <mxGeometry x="10" y="40" width="180" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;entryX=0.75;entryY=1;entryDx=0;entryDy=0;fillColor=#e3c800;strokeColor=#B09500;" edge="1" parent="19" target="5">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="80" y="80" as="sourcePoint"/>
+                        <mxPoint x="40" y="-100" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="32" value="" style="endArrow=classic;html=1;fontColor=#FFFFFF;fillColor=#0050ef;strokeColor=#001DBC;" edge="1" parent="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="270" y="710" as="sourcePoint"/>
+                        <mxPoint x="460" y="570" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="33" value="&lt;h4&gt;made by thunderchen&lt;/h4&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FFFFFF;" vertex="1" parent="1">
+                    <mxGeometry x="278" y="395" width="140" height="50" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

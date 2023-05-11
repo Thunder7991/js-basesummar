@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="./01_debounce基本实现.js"></script> -->
+    <!-- <script src="./01_throttle基本实现.js"></script> -->
+    <!-- <script src="./02_throttle基本实现-leading-trailing.js"></script> -->
+    <!-- <script src="./03_throttle_this_取消.js"></script> -->
+    <script src="./04_throttle返回值.js"></script>
+  </head>
+  <body>
+    <input type="text" />
+    <button>取消</button>
+    <script>
+      var input = document.querySelector('input');
+      let counter = 0;
+      const change = function (event) {
+        console.log('发送了N次请求', this, event);
+        return 'aaaa';
+      };
+      const _throttle = throttle(change, 3000, {
+        leading: true,
+        trailing: true,
+
+      });
+      const PromiseCb = () => {
+        _throttle().then(res => {
+          console.log(res);
+        });
+      }
+      input.oninput = PromiseCb;
+      document.querySelector('button').onclick = function () {
+        _throttle.cancel();
+      };
+    </script>
+  </body>
+</html>

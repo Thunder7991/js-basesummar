@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- <script src="./01_debounce基本实现.js"></script> -->
+    <script src="./04_debounce函数返回值.js"></script>
+  </head>
+  <body>
+    <input type="text" />
+    <button>取消</button>
+    <script>
+      var input = document.querySelector('input');
+      let counter = 0;
+      const change = function (event) {
+        console.log('发送了N次请求', this, event);
+        return 'aaaa';
+      };
+    //   const debounceChange = debounce(change, 1000, true, (res) => {
+    //     console.log(22,res);
+    //   });
+
+    const debounceChange = debounce(change, 1000, true,10);
+      const templateCallBack = () => {
+          debounceChange().then(res => {
+              console.log(res);
+          })
+      }
+      input.oninput = templateCallBack;
+      const cancelBtn = document.querySelector('button');
+      cancelBtn.onclick = function () {
+        debounceChange.cancel();
+      };
+    </script>
+  </body>
+</html>
